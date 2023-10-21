@@ -147,7 +147,7 @@ export default function App() {
   );
 
   return direction === "rtl" ? (
-    <CacheProvider value={rtlCache}>
+    // <CacheProvider value={rtlCache}>
       <ThemeProvider theme={darkMode ? themeDarkRTL : themeRTL}>
         <CssBaseline />
         {layout === "dashboard" && (
@@ -170,7 +170,7 @@ export default function App() {
           <Route path="*" element={<Navigate to="/dashboard" />} />
         </Routes>
       </ThemeProvider>
-    </CacheProvider>
+    // </CacheProvider>
   ) : (
     <ThemeProvider theme={darkMode ? themeDark : theme}>
       <CssBaseline />
