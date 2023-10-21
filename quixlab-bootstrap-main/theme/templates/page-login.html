@@ -49,9 +49,10 @@
                                     </div>
                                     <button class="btn login-form__btn submit w-100">Sign In</button>
                                     
-                                    <!-- <a href="https://widget.tryterra.co/session/demo"><button class="btn login-form__btn submit w-100">Sign In 2</button></a> -->
+                                    <div class="btn login-form__btn submit w-100" ><a href="{{ url_for('page_login_terra') }}">Sign In with Terra</a></div>
                                     <!-- <button onclick = "window.location.href="https://widget.tryterra.co/session/demo" -->
-                                    <button class="btn login-form__btn submit w-100" onclick="location.href='https://widget.tryterra.co/session/demo'" type="button">Sign In with Terra</button>
+                                    <!-- <button class="btn login-form__btn submit w-100" onclick="location.href='https://widget.tryterra.co/session/986b9e37-f2ff-4dd1-9cd7-4970d0600ca6'" type="button">Sign In with Terra</button> -->
+                                    
 
                                 </form>
                                 <p class="mt-5 login-form__footer">Dont have account? <a href="{{ url_for('page_register') }}" class="text-primary">Sign Up</a> now</p>
