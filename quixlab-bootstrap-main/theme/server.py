@@ -22,6 +22,9 @@ def page_login():
 def page_register():
     return render_template('page-register.html')
 
+@app.route("/app-calender")
+def app_calender():
+    return render_template('app-calender.html')
 
 
 
