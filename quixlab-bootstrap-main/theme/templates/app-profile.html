@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename = 'images/favicon.png')}}">
     <!-- Custom Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
 
 </head>
 
@@ -40,11 +40,11 @@
         ***********************************-->
         <div class="nav-header">
             <div class="brand-logo">
-                <a href="index.html">
-                    <b class="logo-abbr"><img src="../images/logo.png" alt=""> </b>
-                    <span class="logo-compact"><img src="../images/logo-compact.png" alt=""></span>
+                <a href="{{url_for('index')}}">
+                    <b class="logo-abbr"><img src="{{url_for('static', filename = 'images/logo.png')}}" alt=""> </b>
+                    <span class="logo-compact"><img src="{{url_for('static', filename = 'images/logo-compact.png')}}" alt=""></span>
                     <span class="brand-title">
-                        <img src="../images/logo-text.png" alt="">
+                        <img src="{{url_for('static', filename = 'images/logo-text.png')}}" alt="">
                     </span>
                 </a>
             </div>
@@ -203,13 +203,13 @@
                         <li class="icons dropdown">
                             <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
                                 <span class="activity active"></span>
-                                <img src="../images/user/1.png" height="40" width="40" alt="">
+                                <img src="{{url_for('static', filename = 'images/user/1.png')}}" height="40" width="40" alt="">
                             </div>
                             <div class="drop-down dropdown-profile   dropdown-menu">
                                 <div class="dropdown-content-body">
                                     <ul>
                                         <li>
-                                            <a href="app-profile.html"><i class="icon-user"></i> <span>Profile</span></a>
+                                            <a href="{{url_for('app_profile')}}"><i class="icon-user"></i> <span>Profile</span></a>
                                         </li>
                                         <!--<li>
                                             <a href="email-inbox.html"><i class="icon-envelope-open"></i> <span>Inbox</span> <div class="badge gradient-3 badge-pill badge-primary">3</div></a>
@@ -219,7 +219,7 @@
                                         <!--<li>
                                             <a href="page-lock.html"><i class="icon-lock"></i> <span>Lock Screen</span></a>
                                         </li>-->
-                                        <li><a href="page-login.html"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                        <li><a href="{{url_for('page_login')}}"><i class="icon-key"></i> <span>Logout</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -240,7 +240,7 @@
                 <ul class="metismenu" id="menu">
                     <!--<li class="nav-label">Dashboard</li>-->
                     <li>
-                        <li><a href="index">Home</a></li>
+                        <li><a href="{{url_for( 'index')}}">Home</a></li>
                         <!--<a class="has-arrow" href="javascript:void()" aria-expanded="false">
                             <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
@@ -280,8 +280,8 @@
                         </ul>-->
                     </li>
                     <li>
-                        <li><a href="./app-profile.html">Profile</a></li>
-                        <li><a href="./app-calender.html">Calender</a></li>
+                        <li><a href="{{url_for('app_profile')}}">Profile</a></li>
+                        <!--<li><a href="./app-calender.html">Calender</a></li>-->
                         
                     <!--<li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
@@ -371,8 +371,8 @@
                     </li>
                     <li class="nav-label">Pages</li>-->
                     <li>
-                        <li><a href="./page-login.html">Login</a></li>
-                            <li><a href="./page-register.html">Register</a></li>
+                        <li><a href="{{url_for('page_login')}}">Login</a></li>
+                            <li><a href="{{url_for('page_register')}}">Register</a></li>
                         <!--<a class="has-arrow" href="javascript:void()" aria-expanded="false">
                             <i class="icon-notebook menu-icon"></i><span class="nav-text">Pages</span>
                         </a>
@@ -419,7 +419,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <div class="media align-items-center mb-4">
-                                    <img class="mr-3" src="../images/avatar/11.png" width="80" height="80" alt="">
+                                    <img class="mr-3" src="{{url_for('static', filename = 'images/avatar/11.png')}}" width="80" height="80" alt="">
                                     <div class="media-body">
                                         <h3 class="mb-0">Pikamy Cha</h3>
                                         <p class="text-muted mb-0">Canada</p>
@@ -586,11 +586,11 @@
     <!--**********************************
         Scripts
     ***********************************-->
-    <script src="../plugins/common/common.min.js"></script>
-    <script src="../js/custom.min.js"></script>
-    <script src="../js/settings.js"></script>
-    <script src="../js/gleek.js"></script>
-    <script src="../js/styleSwitcher.js"></script>
+    <script src="{{url_for('static', filename = 'plugins/common/common.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/custom.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/settings.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/gleek.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/styleSwitcher.js')}}"></script>
 
 </body>
 
