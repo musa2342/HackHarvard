@@ -38,8 +38,9 @@
                     <div class="form-input-content">
                         <div class="card login-form mb-0">
                             <div class="card-body pt-5">
-                                <a class="text-center" href="{{ url_for('index') }}"> <h4>Rosella</h4></a>
-        
+                                <div class="imageheader">
+                                    <a href="{{ url_for('index')}}"> <img src="{{url_for('static', filename = 'images/m2ood.png')}}"></a>
+                                </div>
                                 <form class="mt-5 mb-5 login-input">
                                     <div class="form-group">
                                         <input type="email" class="form-control" placeholder="Email">

@@ -7649,13 +7649,25 @@ sub {
     width: 9.375rem; } }
 
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .brand-title {
-  display: none; }
+    position: relative;
+}
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .brand-title  img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 
 [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .nav-header .logo-abbr {
   display: block; }
 
 [data-sidebar-style="full"][data-layout="horizontal"] .brand-title {
-  display: none; }
+  position: relative;
+}
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .brand-title  img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 
 [data-sidebar-style="full"][data-layout="horizontal"] .nav-header .logo-abbr {
   display: none; }
@@ -7667,7 +7679,13 @@ sub {
   display: block; }
 
 [data-sidebar-style="compact"] .nav-header .brand-title {
-  display: none; }
+  position: relative;
+}
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .brand-title  img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 
 [data-sidebar-style="compact"] .nav-header .logo-compact {
   display: block; }
@@ -7687,7 +7705,13 @@ sub {
   .nav-header {
     width: 3.75rem; }
     .nav-header .brand-title {
-      display: none; }
+      position: relative;
+    }
+    [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .brand-title  img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
   .header-left {
     margin-left: 1.875rem; }
     [direction="rtl"] .header-left {
@@ -8235,7 +8259,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   .nav-header {
     width: 3.75rem; }
     .nav-header .brand-title {
-      display: none; }
+      position: relative;
+    }
+    [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .brand-title  img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
   .header-left {
     margin-left: 1.875rem; }
     .header-left input[type="search"] {
@@ -8458,7 +8488,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
         [data-sidebar-style="mini"] .nav-header .nav-control .hamburger .line {
           background-color: #464a53 !important; }
     [data-sidebar-style="mini"] .nav-header .brand-title {
-      display: none; }
+      position: relative;
+    }
+    [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .brand-title  img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
     [data-sidebar-style="mini"] .nav-header .hamburger {
       display: none; }
   [data-sidebar-style="mini"] .header-content {
@@ -14862,4 +14898,25 @@ td {
 
 .date .different-calendar{
   color: rgb(0,200,0);
+}
+
+.imageheader{
+  text-align:center;
+  
+}
+
+.imageheader img{
+  width: 120px;
+  height: auto;
+}
+
+.sup{
+  vertical-align: super;
+  font-size: smaller;
+}
+
+#shitlogo{
+  margin-left: 7%;
+  margin-top: -15%;
+  width: 79%;
 }
