@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>M^2ood</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename = 'images/m2ood-white.png')}}">
+    <!-- Custom Stylesheet -->
+    <link href="{{url_for('static', filename = 'css/style.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="{{url_for('index')}}">
+                    <!--<b class="logo-abbr"><img src="{{url_for('static', filename = 'images/logo.png')}}" alt=""> </b>-->
+                    <span class="logo-compact"><img src="{{url_for('static', filename = 'images/m2ood-white.png')}}" alt=""></span>
+                    <span class="brand-title">
+                        <img id="shitlogo" src="{{url_for('static', filename = 'images/m2ood-white.png')}}" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                <div class="header-right">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="{{url_for('static', filename = 'images/user/1.png')}}" height="40" width="40" alt="">
+                            </div>
+                            <div class="drop-down dropdown-profile   dropdown-menu">
+                                <div class="dropdown-content-body">
+                                    <ul>
+                                        <li>
+                                            <a href="{{url_for('app_profile')}}"><i class="icon-user"></i> <span>Profile</span></a>
+                                        </li>
+                                        <hr class="my-2">
+                                        <li><a href="{{url_for('page_login')}}"><i class="icon-key"></i> <span>Logout</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <!--<li class="nav-label">Dashboard</li>-->
+                    <li>
+                        <li><a href="{{url_for( 'index')}}">Home</a></li>
+                    </li>
+                    <li class="mega-menu mega-menu-sm">
+                    </li>
+                    <li>
+                    </li>
+                    <li>
+                        <li><a href="{{url_for('app_profile')}}">Profile</a></li>
+                    </li>
+                    <li>
+                        <li><a href="{{url_for('page_login')}}">Login</a></li>
+                            <li><a href="{{url_for('page_register')}}">Register</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="media align-items-center mb-4">
+                                    <img class="mr-3" src="{{url_for('static', filename = 'images/avatar/11.png')}}" width="80" height="80" alt="">
+                                    <div class="media-body">
+                                        <h3 class="mb-0">Pikamy Cha</h3>
+                                        <p class="text-muted mb-0">Canada</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-5">
+                                </div>
+
+                                <h4>Things That Make Me Happy</h4>
+                                <ul class="card-profile__info">
+                                    <li class="mb-1"> <span>&#x2022; Reading</span></li>
+                                    <li><span>&#x2022; Hiking</span></li>
+                                    <li><span>&#x2022; Jogging</span></li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-lg-8 col-xl-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="mb-0">Settings</h2>
+                                    <form action="#" class="form-profile">
+                                        <p>
+                                            <div class="d-flex align-items-center">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" name="textarea" id="textarea" cols="8" rows="1" placeholder="Change Username"></textarea>
+                                                
+                                                </div>
+                                            <div class="col-md-2">
+                                                <button class="btn btn-primary px-3 ml-4">Change</button>
+                                            </div>
+                                            <br>
+                                            <div class="col-md-15">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" name="textarea" id="textarea" cols="8" rows="1" placeholder="Change Password"></textarea>
+                                                
+                                                </div>
+                                            <div class="col-md-2">
+                                                <button class="btn btn-primary px-3 ml-4">Change</button>
+                                            </div>
+                                            <br>
+                                            <div class="col-md-20">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" name="textarea" id="textarea" cols="8" rows="1" placeholder="Change Bio"></textarea>
+                                                
+                                                </div>
+                                            <div class="col-md-2">
+                                                <button class="btn btn-primary px-3 ml-4">Change</button>
+                                            </div>
+                                            </div>
+                                        </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="{{url_for('static', filename = 'plugins/common/common.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/custom.min.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/settings.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/gleek.js')}}"></script>
+    <script src="{{url_for('static', filename = 'js/styleSwitcher.js')}}"></script>
+
+</body>
+
+</html>
