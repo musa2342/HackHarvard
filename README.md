@@ -1,4 +1,23 @@
 # HackHarvard 10/20/23 ~ 10/22/23
+Dear Judge Team:
+
+Please follow the steps: 
+```
+pip install terra-python
+pip install flask
+pip install python
+
+git clone https://github.com/Tienten/HackHarvard.git
+cd quixlab-bootstrap-main/theme
+python3 server.py 
+```
+
+Thank you for your time. 
+
+Best regards, 
+M^2 Team 
+
+Please git clone our repository and run it in the main
 # What inspired us
 We are a team of passionate innovators who want to help you overcome the challenges of the hustle culture. This is the idea that you should always work hard and never stop, even if it means sacrificing your health and happiness[1](https://rightasrain.uwmedicine.org/life/work/hustle-culture). This culture can harm your well-being in many ways, such as causing sleep deprivation, poor nutrition, and lack of physical activity[2](https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx&ocid=msedgntp&cvid=876fa38075b34347a9f572d54897d660&ei=13). These factors can also increase your risk of developing Alzheimer’s disease, a brain disorder that affects your memory and thinking skills[3](https://www.nia.nih.gov/health/what-causes-alzheimers-disease#factors).
 
@@ -39,3 +58,6 @@ Undoubtedly, the most significant challenge we encountered was navigating the co
 Additionally, we welcomed two teammates who were participating in a hackathon for the first time. Despite the steep learning curve, their dedication and adaptability allowed them to make a remarkable contribution in a short span. 
 
 Our journey through this hackathon epitomized the spirit of entrepreneurship, innovation, and creativity. It was an inspiring testament to the power of collaboration and the pursuit of knowledge in the face of challenges.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+
