@@ -20,7 +20,7 @@ output
  * Debug mode: off
 INFO:werkzeug: * Running on http://localhost:8080/ (Press CTRL+C to quit)
 ```
-Copy the http://localhost:8080/ on the browser 
+Copy the http://localhost:8080/ on the browser.
 
 Thank you for your time. 
 
