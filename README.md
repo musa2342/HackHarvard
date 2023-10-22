@@ -8,9 +8,19 @@ pip install flask
 pip install python
 
 git clone https://github.com/Tienten/HackHarvard.git
-cd m\^2/theme
-python3 server.py 
+cd m^2/theme/
+python3 server.py
 ```
+output 
+```
+ * Serving Flask app "server" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug: * Running on http://localhost:8080/ (Press CTRL+C to quit)
+```
+Copy the http://localhost:8080/ on the browser 
 
 Thank you for your time. 
 
