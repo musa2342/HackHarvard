@@ -24,7 +24,7 @@ Copy the http://localhost:8080/ on the browser.
 
 Thank you for your time. <br>
 Best regards, <br>
-M^2 Team 
+M<sup>2</sup>ood Team.
 
 
 # What inspired us
