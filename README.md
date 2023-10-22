@@ -58,3 +58,14 @@ Undoubtedly, the most significant challenge we encountered was navigating the co
 Additionally, we welcomed two teammates who were participating in a hackathon for the first time. Despite the steep learning curve, their dedication and adaptability allowed them to make a remarkable contribution in a short span. 
 
 Our journey through this hackathon epitomized the spirit of entrepreneurship, innovation, and creativity. It was an inspiring testament to the power of collaboration and the pursuit of knowledge in the face of challenges.
+
+
+<!-- licence -->
+## License
+
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/quixlab/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+
