@@ -1,10 +1,11 @@
 # HackHarvard 10/20/23 ~ 10/22/23
-Dear Judge team:
+Dear Judge Team:
 
 Please follow the steps: 
 ```
 pip install terra-python
 pip install flask
+pip install python
 
 git clone https://github.com/Tienten/HackHarvard.git
 cd m^2-bootstrap-main/theme
