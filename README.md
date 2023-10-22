@@ -8,7 +8,7 @@ pip install flask
 pip install python
 
 git clone https://github.com/Tienten/HackHarvard.git
-cd m^2-bootstrap-main/theme
+cd quixlab-bootstrap-main/theme
 python3 server.py 
 ```
 
