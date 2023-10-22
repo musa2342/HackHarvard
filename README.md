@@ -11,7 +11,9 @@ git clone https://github.com/Tienten/HackHarvard.git
 cd m^2/theme/
 python3 server.py
 ```
+<br>
 output 
+<br>
 ```
  * Serving Flask app "server" (lazy loading)
  * Environment: production
