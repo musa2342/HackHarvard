@@ -14863,3 +14863,12 @@ td {
 .date .different-calendar{
   color: rgb(0,200,0);
 }
+
+#Terra{
+  color: white;
+  font-size: 14px;
+}
+
+.btn.login-form__btn.submit.w-100.Terra {
+  margin-top: 5%;
+}
