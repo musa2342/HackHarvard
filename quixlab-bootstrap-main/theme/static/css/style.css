@@ -14872,3 +14872,8 @@ td {
 .btn.login-form__btn.submit.w-100.Terra {
   margin-top: 5%;
 }
+
+#sleep_image{
+  width: 50px;
+  height: 50px;
+}

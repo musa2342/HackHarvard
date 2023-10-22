@@ -67,9 +67,9 @@ def page_login():
 def page_login_terra():
     return redirect(auth_url)
 
-@app.route('/user/Sharon')
-def user():
-    return render_template('http://localhost:8080/index/')
+# @app.route('/user/Sharon')
+# def user():
+#     return render_template('http://localhost:8080/index/')
 
 
 @app.route("/page-register")
