@@ -76,10 +76,6 @@ def page_login_terra():
 def page_register():
     return render_template('page-register.html')
 
-@app.route("/app-calender")
-def app_calender():
-    return render_template('app-calender.html')
-
 @app.route("/connectionSuccess")
 def connectionSuccess():
     return redirect(url_for('index'))
