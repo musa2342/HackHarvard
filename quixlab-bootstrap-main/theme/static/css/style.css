@@ -14935,3 +14935,16 @@ td {
   margin-top: -13%;
   width: 79%;
 }
+
+.emoji-button{
+  background: transparent; 
+  border: transparent; 
+  font-size: 1.875rem;
+}
+
+.emoji-button:focus{
+  background: white; 
+  border: transparent; 
+  font-size: 1.875rem;
+}
+
