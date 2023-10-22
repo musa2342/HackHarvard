@@ -14713,7 +14713,7 @@ body {
   margin: 0.5em;
 }
 
-table {
+.calendartable {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
@@ -14738,6 +14738,10 @@ tr {
   position: relative;
 }
 
+.calrow{
+  width: 100%;
+}
+
 th {
   text-align: right;
   color: #999;
@@ -14747,6 +14751,11 @@ th {
 
 td {
   width: 14.285714286%;
+}
+
+.weeks {
+  width: 100%; 
+  overflow-x: auto;
 }
 
 .date {
