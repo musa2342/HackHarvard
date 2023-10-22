@@ -1,22 +1,3 @@
-# Quixlab Admin Dashboard Template
-
-![quixlab](https://demo.themefisher.com/thumbnails/quixlab.png)
-
-<!-- download -->
-## Download
-
-Download this template from [Github](https://github.com/themefisher/quixlab/archive/main.zip)
-
-<!-- installation -->
-### Usages
-
-After downloading the template, you can simply edit the HTML and CSS files from the `theme` folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
-
-<!-- support -->
-## Technical Support or Questions (Paid)
-
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
-
 <!-- licence -->
 ## License
 
