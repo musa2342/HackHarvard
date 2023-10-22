@@ -14738,6 +14738,10 @@ tr {
   position: relative;
 }
 
+.calrow{
+  width: 100%;
+}
+
 th {
   text-align: right;
   color: #999;
