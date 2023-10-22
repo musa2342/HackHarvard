@@ -59,13 +59,5 @@ Additionally, we welcomed two teammates who were participating in a hackathon fo
 
 Our journey through this hackathon epitomized the spirit of entrepreneurship, innovation, and creativity. It was an inspiring testament to the power of collaboration and the pursuit of knowledge in the face of challenges.
 
-
-<!-- licence -->
-## License
-
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
-
-**Code License:** Released under the [MIT](https://github.com/themefisher/quixlab/blob/main/LICENSE) license.
-
 **Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
 
