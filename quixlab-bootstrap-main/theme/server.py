@@ -3,6 +3,7 @@ import logging
 import flask
 from terra.base_client import Terra
 from datetime import datetime
+import requests
 
 logging.basicConfig(level=logging.INFO)
 _LOGGER = logging.getLogger("app")
@@ -12,6 +13,18 @@ DEV_ID = "earlham-testing-DoaYyfwkHC"
 SECRET = "iwqBZa7s6pln7v8h8zRF1l3OWbTLyzsW"
 
 terra = Terra(API_KEY, DEV_ID, SECRET)
+
+auth_resp = terra.generate_authentication_url(
+    reference_id="Sharon",
+    resource="GARMIN",
+    auth_success_redirect_url="http://localhost:8080/",
+    auth_failure_redirect_url="http://localhost:8080/page-login",
+).get_parsed_response()
+
+auth_url= auth_resp.auth_url
+user_id=auth_resp.user_id
+
+
 
 # terra = Terra(api_key='API-KEY', dev_id='DEV-ID', secret="SIGNING-SECRET")
 
@@ -49,16 +62,14 @@ def app_profile():
 def page_login():
     return render_template('page-login.html')
 
+
 @app.route("/page-login-terra")
 def page_login_terra():
-    widget_response = terra.generate_widget_session(
-    reference_id="Sharon",
-    providers=["GARMIN","WITHINGS","FITBIT","GOOGLE","OURA","WAHOO","PELOTON","ZWIFT","TRAININGPEAKS","FREESTYLELIBRE","DEXCOM","COROS","HUAWEI","OMRON","RENPHO","POLAR","SUUNTO","EIGHT","APPLE","CONCEPT2","WHOOP","IFIT","TEMPO","CRONOMETER","FATSECRET","NUTRACHECK","UNDERARMOUR"],
-    auth_success_redirect_url="http://localhost:8080/",
-    auth_failure_redirect_url="http://localhost:8080/page-login",
-    language="en"
-    ).get_parsed_response()
-    return redirect(widget_response.url, status=403)
+    return redirect(auth_url)
+
+# @app.route('/user/Sharon')
+# def user():
+#     return render_template('http://localhost:8080/index/')
 
 
 @app.route("/page-register")
