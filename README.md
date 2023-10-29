@@ -7,7 +7,7 @@ pip install terra-python
 pip install flask
 pip install python
 
-git clone https://github.com/Tienten/HackHarvard.git
+git clone https://github.com/musa2342/HackHarvard.git
 cd m^2/theme/
 python3 server.py
 ```
